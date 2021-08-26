@@ -1,0 +1,55 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@vldp2000 
+vldp2000
+/
+fcb1010
+2
+10
+Code
+Issues
+Pull requests
+23
+Actions
+Projects
+Wiki
+Security
+28
+Insights
+Settings
+fcb1010/apiserver/.gitignore
+@vldp2000
+vldp2000 gitignore
+Latest commit a28c917 on 27 Feb 2020
+ History
+ 1 contributor
+We found potential security vulnerabilities in your dependencies.
+Only the owner of this repository can see this message.
+
+21 lines (18 sloc)  214 Bytes
+  
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
