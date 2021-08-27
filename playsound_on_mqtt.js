@@ -10,16 +10,14 @@ client.on('message',function(topic, message, packet){
     if (topic) {
         console.log("topic is "+ topic);
         console.log("message is "+ message);        
-        if (topic == config.motionSensorTopic) {
+        if (topic == config.motionSensorTopic && message == 'ON') {
             player.play(config.motionAlarmSound, (err) => {
                 if (err) console.log(`Could not play sound: ${err}`);   
             });
-        } else if (topic == config.doorbellTopic ) {
+        } else if (topic == config.doorbellTopic && message == 'ON') {
             player.play(config.doorbellSound, (err) => {
                 if (err) console.log(`Could not play sound: ${err}`);   
             });
-        } else {
-            console.log("Unknown topic");
         }
     }
 });
