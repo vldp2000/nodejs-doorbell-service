@@ -7,9 +7,9 @@ console.log("connected flag  " + client.connected);
 
 //handle incoming messages
 client.on('message',function(topic, message, packet){
-	console.log("message is "+ message);
-	console.log("topic is "+ topic);
     if (topic) {
+        console.log("topic is "+ topic);
+        console.log("message is "+ message);        
         if (topic == config.motionSensorTopic) {
             player.play(config.motionAlarmSound, (err) => {
                 if (err) console.log(`Could not play sound: ${err}`);   
@@ -18,6 +18,8 @@ client.on('message',function(topic, message, packet){
             player.play(config.doorbellSound, (err) => {
                 if (err) console.log(`Could not play sound: ${err}`);   
             });
+        } else {
+            console.log("Unknown topic");
         }
     }
 });

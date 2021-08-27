@@ -7,6 +7,6 @@ module.exports = {
   doorbellId: 'EBC02E',
   motionSensorTopic: 'Motion/FrontDoor/STATE',
   motionSensorId: 'EBC02E1',
-  doorbellSound: './media/doorbell-1.mp3',
+  doorbellSound: './media/doorbell-2.mp3',
   motionAlarmSound: './media/alarm1.mp3'
 }

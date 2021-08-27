@@ -1,13 +1,14 @@
 {
-  "name": "PlaySoundOnMqtt",
+  "name": "play-sound-on-mqtt",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS service for RaspberryPi. Play sounds on MQTT messages.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon playsound_on_mqtt.js --exec  \"npm run && node\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Vlad Perepelytsya",
   "license": "ISC",
   "dependencies": {
     "mqtt": "^4.2.8",
